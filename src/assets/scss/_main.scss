@@ -1,0 +1,116 @@
+@import './variables.scss';
+
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+    background-color: $primary;
+}
+
+.home{
+
+    position: relative;
+    height: 100% ;
+
+    nav{
+        position: sticky;
+        top: -15px;
+    }
+    .nav{
+        color: white;
+        padding-top: 2vh;
+        font-family: "Outfit";
+        max-height: max-content;
+
+        nav{
+            max-width: 1300px;
+            min-width: 80vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &.logo{
+                    font-size: 20px;
+                    font-weight: 800;
+
+                    img{
+                        width: 30px;
+                        margin-right: 10px;
+                    }
+                }
+
+                &.minor_links{
+                    .hidden{
+                        display: none;
+                    }
+
+                    li:hover{
+                        transition: all ease 0.2s;
+                        font-weight: 800;
+                        border-bottom: 2px solid white;
+                        padding: 15px 10px;
+
+                        &.hidden{
+                            display: none;
+                        }
+
+                        &.show{
+                            display: block;
+                        }
+                    }
+                }
+
+                &.login_links{
+                    li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 130px;
+                        transition: all ease 0.3s;
+                        border-radius: 10px;
+
+                        &:last-child {
+                            border: 2px solid white;
+                            padding: 14px 9px;
+                        }
+
+                        &:hover{
+                            background-color: white;
+                            color: $primary;
+                        }
+    
+                    }
+                }
+
+                li{
+                    cursor: pointer;
+                    margin-left: 40px;
+                    padding: 16px 10px;
+                }
+            }
+        }
+    }
+
+    .forms{
+        height: 900px;
+        width: 900px;
+        border: 3px solid white;
+        padding: 3%;
+        border-radius: 50px;
+        margin: 20px auto;
+        color: white;
+
+        .form{
+            background-color: white;
+
+           
+        }
+    }
+}
